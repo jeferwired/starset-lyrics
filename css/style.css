@@ -1,0 +1,152 @@
+@font-face {
+    font-family: VT323;
+    src: url(../font/VT323-Regular.ttf);
+}
+
+:root {
+    --background: #181818 ;
+    --black: #000;
+    --color: #C3FFFF;
+}
+
+* {
+    font-family: VT323, sans-serif;
+    color: var(--color);
+    text-shadow: var(--color) 0px 0px 7px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: var(--background);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 12px;
+}
+
+header > a > img {
+    border-radius: 18px;
+    width: 60px;
+    height: 60px;
+}
+
+main {
+    width: 98vw;
+    max-width: 133.33vh;
+    /* 4/3 = 1.333 */
+    height: 75vw;
+    /* 3/4 = .75 */
+    max-height: 98vh;
+    background-color: var(--black);
+    direction: ltr;
+    overflow-y: scroll;
+}
+
+h1.index {
+    font-size: 100px;
+    width: 650px;
+    text-align: center;
+    border: 10px var(--color) solid;
+    box-shadow: var(--color) 0px 0px 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a.index {
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a.album_selection {
+    text-decoration: none;
+}
+
+div.album_selection {
+    display: inline-block;
+    width: 200px;
+    height: 245px;
+    background: var(--background);
+    border: 5px var(--background) solid;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+div.album_selection > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+p.album_selection {
+    text-align: center;
+    font-size: 35px;
+}
+
+a.song_selection {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    padding: 3px;
+}
+
+main.song > h1 {
+    font-size: 90px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+main.song > p {
+    font-size: 35px;
+    text-align: center;
+}
+
+main.song > br {
+    display: block;
+    content: "";
+    margin-top: 45px;
+}
+
+aside.song {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+aside.song > iframe {
+    border-radius: 20px;
+    height: 80px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--black);
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    border-radius: 2vh;
+}
