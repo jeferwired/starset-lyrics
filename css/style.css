@@ -43,6 +43,7 @@ header > a > img {
     border-radius: 18px;
     width: 60px;
     height: 60px;
+    box-shadow: var(--black) 0px 0px 5px;
 }
 
 main {
