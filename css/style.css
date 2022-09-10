@@ -47,8 +47,8 @@ header > a > img {
 
 main {
     width: 98vw;
-    max-width: 133.33vh; /* 4/3 = 1.333 */
-    height: 75vw; /* 3/4 = .75 */
+    max-width: calc(4/3*100vh);
+    height: calc(3/4*1000vh);
     max-height: 98vh;
     background-color: var(--black);
     direction: ltr;
